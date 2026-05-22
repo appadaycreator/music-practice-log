@@ -1,0 +1,8 @@
+{
+  "name": "Music Practice Log",
+  "short_name": "music-practi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1"
+}
