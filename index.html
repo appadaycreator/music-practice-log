@@ -170,28 +170,6 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
         .comm .cn{font-size:13px;font-weight:800;color:var(--ink)}
         .comm .ct{font-size:13px;color:var(--text);margin-top:2px}
 
-        /* ===== Sample dashboard preview (static, always visible) ===== */
-        .preview-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:16px}
-        .pv{background:#fff;border:1px solid #eef2f7;border-radius:14px;padding:16px;box-shadow:0 4px 16px rgba(15,23,42,.05)}
-        .pv h4{font-size:13px;font-weight:800;color:var(--ink);margin-bottom:2px;display:flex;align-items:center;gap:7px}
-        .pv .pvs{font-size:11px;color:var(--muted);margin-bottom:12px}
-        .pv .spark{width:100%;height:96px;display:block}
-        .pv-bars{display:flex;align-items:flex-end;gap:10px;height:110px}
-        .pv-bars .col{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px}
-        .pv-bars .bar{width:100%;background:linear-gradient(180deg,#60a5fa,#2563EB);border-radius:5px 5px 0 0}
-        .pv-bars .lab{font-size:10px;color:var(--muted);font-weight:700}
-        .pv-donut-wrap{display:flex;flex-direction:column;align-items:center;gap:12px}
-        .pv-donut{position:relative;width:104px;height:104px;border-radius:50%}
-        .pv-donut::after{content:"";position:absolute;inset:16px;background:#fff;border-radius:50%}
-        .pv-donut .pc{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1}
-        .pv-donut .pc b{font-size:22px;font-weight:900;color:var(--ink);line-height:1}
-        .pv-donut .pc small{font-size:9px;color:var(--muted);font-weight:700}
-        .pv-leg{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:4px}
-        .pv-leg span{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--muted);font-weight:700}
-        .pv-leg i{width:8px;height:8px;border-radius:2px;display:inline-block}
-        .preview-note{font-size:11px;color:var(--muted);text-align:center;margin-top:12px}
-        @media(max-width:760px){.preview-grid{grid-template-columns:1fr}}
-
         @media print{
           header,footer,nav,button,.no-print,
           [class*="share"],[class*="affiliate"],[id*="share"],
@@ -299,52 +277,6 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
           <div class="stat"><span class="si"><img src="assets/icons/split/01-04.png" alt="" aria-hidden="true"></span><div><div class="sv" id="stat-streak">0日</div><div class="sl">連続記録</div></div></div>
           <div class="stat"><span class="si"><img src="assets/icons/split/02-05.png" alt="" aria-hidden="true"></span><div><div class="sv" id="stat-sessions">0回</div><div class="sl">記録回数</div></div></div>
           <div class="stat"><span class="si"><img src="assets/icons/split/02-07.png" alt="" aria-hidden="true"></span><div><div class="sv" id="stat-total">0分</div><div class="sl">累計練習時間</div></div></div>
-        </div>
-
-        <!-- ===== Sample dashboard preview (visible before first record) ===== -->
-        <div class="card">
-          <h2 class="section-title"><img src="assets/icons/split/02-07.png" alt="" aria-hidden="true">ダッシュボードでまるごと可視化</h2>
-          <div class="preview-grid">
-            <div class="pv">
-              <h4>📈 練習時間の推移</h4>
-              <div class="pvs">直近7日間（サンプル表示）</div>
-              <svg class="spark" viewBox="0 0 300 96" preserveAspectRatio="none" aria-hidden="true">
-                <defs><linearGradient id="pvg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2563EB" stop-opacity=".25"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></linearGradient></defs>
-                <line x1="0" y1="24" x2="300" y2="24" stroke="#eef2f7" stroke-width="1"/>
-                <line x1="0" y1="48" x2="300" y2="48" stroke="#eef2f7" stroke-width="1"/>
-                <line x1="0" y1="72" x2="300" y2="72" stroke="#eef2f7" stroke-width="1"/>
-                <path d="M0,74 L50,64 L100,68 L150,42 L200,48 L250,22 L300,32 L300,96 L0,96 Z" fill="url(#pvg1)"/>
-                <polyline points="0,74 50,64 100,68 150,42 200,48 250,22 300,32" fill="none" stroke="#2563EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="250" cy="22" r="4" fill="#2563EB"/>
-              </svg>
-            </div>
-            <div class="pv">
-              <h4>🎵 楽器別の内訳</h4>
-              <div class="pvs">練習時間の割合</div>
-              <div class="pv-donut-wrap">
-                <div class="pv-donut" style="background:conic-gradient(#2563EB 0 45%,#f59e0b 45% 70%,#10b981 70% 88%,#ec4899 88% 100%)" aria-hidden="true">
-                  <div class="pc"><b>5</b><small>楽器</small></div>
-                </div>
-                <div class="pv-leg">
-                  <span><i style="background:#2563EB"></i>ギター</span>
-                  <span><i style="background:#f59e0b"></i>ピアノ</span>
-                  <span><i style="background:#10b981"></i>ドラム</span>
-                  <span><i style="background:#ec4899"></i>その他</span>
-                </div>
-              </div>
-            </div>
-            <div class="pv">
-              <h4>🎯 スキル別バランス</h4>
-              <div class="pvs">練習種別ごとの時間</div>
-              <div class="pv-bars" aria-hidden="true">
-                <div class="col"><div class="bar" style="height:55px"></div><div class="lab">基礎</div></div>
-                <div class="col"><div class="bar" style="height:100px"></div><div class="lab">曲</div></div>
-                <div class="col"><div class="bar" style="height:72px"></div><div class="lab">応用</div></div>
-                <div class="col"><div class="bar" style="height:40px"></div><div class="lab">表現</div></div>
-              </div>
-            </div>
-          </div>
-          <p class="preview-note">※ 上記はサンプルです。練習を記録すると、あなたの実データでグラフが自動更新されます。</p>
         </div>
 
         <!-- ===== Result + Charts ===== -->

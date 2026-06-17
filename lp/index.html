@@ -86,69 +86,6 @@ img{max-width:100%;display:block}
 .hero-badge.b2{bottom:-16px;left:-14px}
 @media(max-width:820px){.hero-grid{grid-template-columns:1fr;gap:36px;padding:48px 0 56px}.hero h1{font-size:33px}.hero-badge.b2{left:6px}}
 
-/* ===== Dashboard mockup (built with CSS/SVG) ===== */
-.dash{position:relative;background:#fff;border-radius:20px;box-shadow:0 30px 70px rgba(15,23,42,.22);border:1px solid #eef2f7;padding:18px}
-.dash-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
-.dash-top h4{font-size:14px;font-weight:800;color:var(--ink)}
-.dash-chip{font-size:11px;font-weight:800;color:#059669;background:#ecfdf5;padding:4px 11px;border-radius:99px;display:inline-flex;align-items:center;gap:5px}
-.dash-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:12px}
-.ds{background:var(--bg);border-radius:12px;padding:12px 12px}
-.ds .dsl{font-size:10px;color:var(--muted);font-weight:700}
-.ds .dsv{font-size:20px;font-weight:900;color:var(--ink);line-height:1.25}
-.ds .dsv small{font-size:11px;color:#059669;font-weight:800}
-.dash-row{display:grid;grid-template-columns:1.35fr 1fr;gap:12px;margin-bottom:12px}
-.dash-card{background:var(--bg);border-radius:12px;padding:13px}
-.dash-card .ct{font-size:11px;color:var(--muted);font-weight:800;margin-bottom:9px;display:flex;align-items:center;justify-content:space-between}
-.dash-card .ct b{color:var(--primary);font-size:12px}
-.spark{width:100%;height:78px;display:block}
-.donut-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
-.donut{position:relative;width:84px;height:84px;border-radius:50%;background:conic-gradient(var(--primary) 0 78%,#e2e8f0 78% 100%)}
-.donut::after{content:"78%";position:absolute;inset:9px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:var(--ink)}
-.donut-leg{font-size:10px;color:var(--muted);font-weight:700;text-align:center}
-.bars{display:flex;align-items:flex-end;gap:7px;height:72px}
-.bars .b{flex:1;background:linear-gradient(180deg,#60a5fa,#2563EB);border-radius:5px 5px 0 0;position:relative}
-.bars .b.acc{background:linear-gradient(180deg,#fbbf24,#f59e0b)}
-.dash-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
-.dash-legend span{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--muted);font-weight:700}
-.dash-legend i{width:9px;height:9px;border-radius:3px;display:inline-block}
-
-/* ===== Mini chart badges inside feature cards ===== */
-.feat-chart{padding:14px 22px 0;}
-.feat-chart .spark{height:48px}
-.mini-bars{display:flex;align-items:flex-end;gap:5px;height:46px}
-.mini-bars .b{flex:1;background:linear-gradient(180deg,#93c5fd,#2563EB);border-radius:3px 3px 0 0}
-.mini-radar{display:block;margin:0 auto}
-.mini-donut{position:relative;width:54px;height:54px;border-radius:50%;margin:0 auto}
-.mini-donut::after{content:attr(data-v);position:absolute;inset:7px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:var(--ink)}
-.feat-num{display:inline-flex;align-items:baseline;gap:4px;padding:14px 22px 0}
-.feat-num b{font-size:30px;font-weight:900;color:var(--primary);line-height:1}
-.feat-num span{font-size:12px;color:var(--muted);font-weight:700}
-
-/* ===== Analytics preview section ===== */
-.viz-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:20px}
-.viz-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 6px 22px rgba(15,23,42,.05)}
-.viz-card h3{font-size:15px;font-weight:800;color:var(--ink);margin-bottom:4px;display:flex;align-items:center;gap:8px}
-.viz-card .vsub{font-size:12px;color:var(--muted);margin-bottom:16px}
-.viz-card .spark{height:120px}
-.viz-bars{display:flex;align-items:flex-end;gap:12px;height:140px}
-.viz-bars .col{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px}
-.viz-bars .bar{width:100%;background:linear-gradient(180deg,#60a5fa,#2563EB);border-radius:6px 6px 0 0}
-.viz-bars .lab{font-size:11px;color:var(--muted);font-weight:700}
-.viz-donut-wrap{display:flex;flex-direction:column;align-items:center;gap:14px}
-.viz-donut{position:relative;width:130px;height:130px;border-radius:50%}
-.viz-donut::after{content:"";position:absolute;inset:20px;background:#fff;border-radius:50%}
-.viz-donut .vc{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1}
-.viz-donut .vc b{font-size:26px;font-weight:900;color:var(--ink);line-height:1}
-.viz-donut .vc small{font-size:10px;color:var(--muted);font-weight:700}
-@media(max-width:820px){.viz-grid{grid-template-columns:1fr}}
-
-/* ===== FAQ accordion ===== */
-.faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
-.faq-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px}
-.faq-item h3{font-size:15px;font-weight:800;color:var(--ink);margin-bottom:8px;display:flex;gap:10px;align-items:flex-start}
-.faq-item h3 .q{flex:none;width:24px;height:24px;border-radius:7px;background:var(--primary-light);color:var(--primary);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900}
-.faq-item p{font-size:14px;color:var(--muted);padding-left:34px}
-
 /* ===== Feature strip (3 cols) ===== */
 .strip{background:#fff;padding:54px 0}
 .strip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -246,9 +183,7 @@ img{max-width:100%;display:block}
     </a>
     <nav class="nav-links" aria-label="メインナビゲーション">
       <a href="#features">機能</a>
-      <a href="#analytics">分析</a>
       <a href="#ai">AI分析</a>
-      <a href="#faq">FAQ</a>
       <a href="#voice">利用者の声</a>
       <a href="/music-practice-log/" class="btn btn-primary nav-cta">今すぐ記録開始</a>
     </nav>
@@ -274,48 +209,7 @@ img{max-width:100%;display:block}
         </div>
       </div>
       <div class="hero-visual">
-        <div class="dash" role="img" aria-label="練習記録ダッシュボードのイメージ：今週の練習時間や目標達成率をグラフで可視化">
-          <div class="dash-top">
-            <h4>📊 練習ダッシュボード</h4>
-            <span class="dash-chip">● 順調です</span>
-          </div>
-          <div class="dash-stats">
-            <div class="ds"><div class="dsl">今週</div><div class="dsv">320<small> 分</small></div></div>
-            <div class="ds"><div class="dsl">連続記録</div><div class="dsv">12<small> 日</small></div></div>
-            <div class="ds"><div class="dsl">前週比</div><div class="dsv" style="color:#059669">+12%</div></div>
-          </div>
-          <div class="dash-row">
-            <div class="dash-card">
-              <div class="ct">練習時間の推移 <b>7日間</b></div>
-              <svg class="spark" viewBox="0 0 240 78" preserveAspectRatio="none" aria-hidden="true">
-                <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2563EB" stop-opacity=".28"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></linearGradient></defs>
-                <path d="M0,60 L40,48 L80,54 L120,32 L160,38 L200,18 L240,24 L240,78 L0,78 Z" fill="url(#g1)"/>
-                <polyline points="0,60 40,48 80,54 120,32 160,38 200,18 240,24" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="200" cy="18" r="3.5" fill="#2563EB"/>
-              </svg>
-            </div>
-            <div class="dash-card donut-wrap">
-              <div class="donut"></div>
-              <div class="donut-leg">目標達成率</div>
-            </div>
-          </div>
-          <div class="dash-card">
-            <div class="ct">楽器別の練習バランス</div>
-            <div class="bars">
-              <div class="b" style="height:55%"></div>
-              <div class="b" style="height:80%"></div>
-              <div class="b acc" style="height:42%"></div>
-              <div class="b" style="height:68%"></div>
-              <div class="b" style="height:90%"></div>
-              <div class="b acc" style="height:50%"></div>
-              <div class="b" style="height:72%"></div>
-            </div>
-            <div class="dash-legend">
-              <span><i style="background:#2563EB"></i>ギター・ピアノ</span>
-              <span><i style="background:#f59e0b"></i>その他の楽器</span>
-            </div>
-          </div>
-        </div>
+        <div class="hero-shot"><img src="../assets/photos/photo_02.jpg" alt="楽器練習記録ダッシュボードの画面イメージ"></div>
         <div class="hero-badge b1"><img src="../assets/icons/split/02-07.png" alt="" aria-hidden="true"><div><b>+12%</b><small>今週の上達</small></div></div>
         <div class="hero-badge b2"><img src="../assets/icons/split/02-08.png" alt="" aria-hidden="true"><div><b>78%</b><small>目標達成率</small></div></div>
       </div>
@@ -357,32 +251,26 @@ img{max-width:100%;display:block}
     <div class="feat-grid">
       <article class="feat-card">
         <div class="ph"><img src="../assets/photos/photo_07.jpg" loading="lazy" decoding="async" alt="練習時間の推移グラフ"></div>
-        <div class="feat-chart"><svg class="spark" viewBox="0 0 300 48" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="fg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2563EB" stop-opacity=".25"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></linearGradient></defs><path d="M0,38 L50,30 L100,34 L150,18 L200,24 L250,10 L300,16 L300,48 L0,48 Z" fill="url(#fg1)"/><polyline points="0,38 50,30 100,34 150,18 200,24 250,10 300,16" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="feat-body"><span class="ic"><img src="../assets/icons/split/02-06.png" alt="" aria-hidden="true"></span><h3>練習時間の可視化</h3><p>日々の練習時間を積み上げグラフで表示。継続のリズムがひと目で分かります。</p></div>
       </article>
       <article class="feat-card">
         <div class="ph"><img src="../assets/photos/photo_08.jpg" loading="lazy" decoding="async" alt="達成度ゲージ"></div>
-        <div class="feat-chart"><div class="mini-donut" data-v="92%" style="background:conic-gradient(#10b981 0 92%,#e2e8f0 92% 100%)"></div></div>
         <div class="feat-body"><span class="ic"><img src="../assets/icons/split/02-08.png" alt="" aria-hidden="true"></span><h3>達成度ゲージ・チャレンジ</h3><p>目標に対する達成度をリング表示。チャレンジモードでモチベーションを維持。</p></div>
       </article>
       <article class="feat-card">
         <div class="ph"><img src="../assets/photos/photo_09.jpg" loading="lazy" decoding="async" alt="スキル分析レーダーチャート"></div>
-        <div class="feat-chart"><svg class="mini-radar" width="58" height="58" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,5 95,38 78,92 22,92 5,38" fill="none" stroke="#e2e8f0" stroke-width="2"/><polygon points="50,27 77,44 67,79 33,79 23,44" fill="none" stroke="#cbd5e1" stroke-width="1.5"/><polygon points="50,14 88,40 70,86 26,74 18,42" fill="rgba(37,99,235,.18)" stroke="#2563EB" stroke-width="2.5"/></svg></div>
         <div class="feat-body"><span class="ic"><img src="../assets/icons/split/02-07.png" alt="" aria-hidden="true"></span><h3>スキル分析レーダー</h3><p>テクニック別の習熟度をレーダーチャートで分析。弱点が明確になります。</p></div>
       </article>
       <article class="feat-card">
         <div class="ph"><img src="../assets/photos/photo_10.jpg" loading="lazy" decoding="async" alt="クイック記録"></div>
-        <div class="feat-num"><b>3</b><span>秒で記録完了 / 1タップ</span></div>
         <div class="feat-body"><span class="ic"><img src="../assets/icons/split/01-06.png" alt="" aria-hidden="true"></span><h3>クイック記録・もう一度</h3><p>「もう一度練習」ボタンで前回と同じ内容を1タップで記録できます。</p></div>
       </article>
       <article class="feat-card">
         <div class="ph"><img src="../assets/photos/photo_11.jpg" loading="lazy" decoding="async" alt="メトロノームとチューナー"></div>
-        <div class="feat-chart"><div class="mini-bars" aria-hidden="true"><div class="b" style="height:40%"></div><div class="b" style="height:65%"></div><div class="b" style="height:50%"></div><div class="b" style="height:85%"></div><div class="b" style="height:60%"></div><div class="b" style="height:95%"></div><div class="b" style="height:70%"></div></div></div>
         <div class="feat-body"><span class="ic"><img src="../assets/icons/split/01-08.png" alt="" aria-hidden="true"></span><h3>メトロノーム＆チューナー</h3><p>BPM調整可能なメトロノームと音程チューナーを標準搭載。</p></div>
       </article>
       <article class="feat-card">
         <div class="ph"><img src="../assets/photos/photo_12.jpg" loading="lazy" decoding="async" alt="SNSシェア"></div>
-        <div class="feat-num"><b>22</b><span>個の達成バッジを獲得</span></div>
         <div class="feat-body"><span class="ic"><img src="../assets/icons/split/04-03.png" alt="" aria-hidden="true"></span><h3>練習成果のSNSシェア</h3><p>積み上げた練習記録や達成バッジを、SNSで仲間とシェアできます。</p></div>
       </article>
     </div>
@@ -413,59 +301,8 @@ img{max-width:100%;display:block}
   </div>
 </section>
 
-<!-- ===== Analytics preview ===== -->
-<section class="sec alt" id="analytics">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-tag">ANALYTICS</span>
-      <h2>練習データをまるごと可視化</h2>
-      <p>練習時間の推移・楽器別の内訳・目標達成率を、わかりやすいグラフで自動集計。数字を眺めるだけで上達が実感できます。</p>
-    </div>
-    <div class="viz-grid">
-      <div class="viz-card">
-        <h3>📈 週間練習時間</h3>
-        <p class="vsub">直近7日間の練習時間の推移</p>
-        <svg class="spark" viewBox="0 0 300 120" preserveAspectRatio="none" aria-hidden="true">
-          <defs><linearGradient id="vg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2563EB" stop-opacity=".25"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></linearGradient></defs>
-          <line x1="0" y1="30" x2="300" y2="30" stroke="#eef2f7" stroke-width="1"/>
-          <line x1="0" y1="60" x2="300" y2="60" stroke="#eef2f7" stroke-width="1"/>
-          <line x1="0" y1="90" x2="300" y2="90" stroke="#eef2f7" stroke-width="1"/>
-          <path d="M0,92 L50,80 L100,86 L150,52 L200,60 L250,28 L300,40 L300,120 L0,120 Z" fill="url(#vg1)"/>
-          <polyline points="0,92 50,80 100,86 150,52 200,60 250,28 300,40" fill="none" stroke="#2563EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="250" cy="28" r="4.5" fill="#2563EB"/>
-        </svg>
-      </div>
-      <div class="viz-card">
-        <h3>🎵 楽器別の内訳</h3>
-        <p class="vsub">練習時間が多い楽器の割合</p>
-        <div class="viz-donut-wrap">
-          <div class="viz-donut" style="background:conic-gradient(#2563EB 0 45%,#f59e0b 45% 70%,#10b981 70% 88%,#ec4899 88% 100%)" aria-hidden="true">
-            <div class="vc"><b>5</b><small>楽器を記録中</small></div>
-          </div>
-          <div class="dash-legend" style="justify-content:center">
-            <span><i style="background:#2563EB"></i>ギター 45%</span>
-            <span><i style="background:#f59e0b"></i>ピアノ 25%</span>
-            <span><i style="background:#10b981"></i>ドラム 18%</span>
-            <span><i style="background:#ec4899"></i>その他 12%</span>
-          </div>
-        </div>
-      </div>
-      <div class="viz-card">
-        <h3>🎯 スキル別バランス</h3>
-        <p class="vsub">練習種別ごとの取り組み時間</p>
-        <div class="viz-bars" aria-hidden="true">
-          <div class="col"><div class="bar" style="height:60px"></div><div class="lab">基礎</div></div>
-          <div class="col"><div class="bar" style="height:110px"></div><div class="lab">曲</div></div>
-          <div class="col"><div class="bar" style="height:80px"></div><div class="lab">応用</div></div>
-          <div class="col"><div class="bar" style="height:45px"></div><div class="lab">表現</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ===== Multi-device ===== -->
-<section class="sec">
+<section class="sec alt">
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-tag">CLOUD SYNC</span>
@@ -514,39 +351,6 @@ img{max-width:100%;display:block}
         <p>「AIのアドバイスで次に何をすべきかが明確になりました。発表会前の計画づくりにも役立っています。無料なのが驚きです。」</p>
         <div class="tuser"><img src="../assets/photos/photo_15.jpg" loading="lazy" decoding="async" alt=""><div><b>バイオリン・20代</b><small>アマチュア演奏家</small></div></div>
       </article>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FAQ ===== -->
-<section class="sec alt" id="faq">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-tag">FAQ</span>
-      <h2>よくある質問</h2>
-      <p>はじめての方からよく寄せられる質問をまとめました。</p>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item">
-        <h3><span class="q">Q</span>本当に無料で使えますか？</h3>
-        <p>はい。登録不要・完全無料でご利用いただけます。クラウド同期やメトロノーム・チューナー・AI分析もすべて無料です（運営のため広告を掲載しています）。</p>
-      </div>
-      <div class="faq-item">
-        <h3><span class="q">Q</span>どんな楽器に対応していますか？</h3>
-        <p>ギター・ピアノ・ベース・ドラム・バイオリンなど、22以上の楽器・カテゴリに対応。複数の楽器をまとめて記録・比較できます。</p>
-      </div>
-      <div class="faq-item">
-        <h3><span class="q">Q</span>スマホとPCの両方で使えますか？</h3>
-        <p>はい。インストール不要のWebツールなので、スマホ・タブレット・PCのブラウザからすぐに使えます。クラウド同期で記録はいつでも最新の状態です。</p>
-      </div>
-      <div class="faq-item">
-        <h3><span class="q">Q</span>記録するのに手間はかかりませんか？</h3>
-        <p>楽器・メニュー・時間を選ぶだけ、最短3秒で記録完了。「もう一度練習」ボタンなら前回と同じ内容を1タップで記録できます。</p>
-      </div>
-      <div class="faq-item">
-        <h3><span class="q">Q</span>AI分析では何が分かりますか？</h3>
-        <p>練習量と上達の相関、練習の偏りや停滞を自動で検知し、次に取り組むべき課題をパーソナライズして提案します。発表会・試験に向けた逆算プランづくりにも役立ちます。</p>
-      </div>
     </div>
   </div>
 </section>
