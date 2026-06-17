@@ -285,14 +285,21 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
             <h3 class="section-title" style="font-size:16px;color:var(--primary)"><img src="assets/icons/split/02-07.png" alt="" aria-hidden="true">練習記録</h3>
             <div id="output"></div>
             <div class="chart-wrapper" style="margin-top:18px">
-              <h4 class="chart-label">📊 練習時間の推移</h4>
-              <small class="chart-helper">過去7日間の楽器別練習時間を積み上げ棒グラフで表示しています。毎日の練習パターンを一目で確認できます。</small>
+              <h4 class="chart-label">📈 練習時間の推移</h4>
+              <small class="chart-helper">過去7日間の楽器別練習時間をエリアグラフで表示しています。上達の積み上げを一目で確認できます。</small>
               <div class="chart-container"><canvas id="practiceChart" style="max-height:300px;"></canvas></div>
             </div>
-            <div class="chart-wrapper" style="margin-top:24px">
-              <h4 class="chart-label">🎵 楽器別練習時間</h4>
-              <small class="chart-helper">あなたが練習した各楽器の総練習時間を比較できます。得意な楽器と伸び代のある楽器がひと目で分かります。</small>
-              <div class="chart-container"><canvas id="instrumentChart" style="max-height:300px;"></canvas></div>
+            <div class="charts-2" style="margin-top:24px">
+              <div class="chart-wrapper">
+                <h4 class="chart-label">🎵 楽器別練習時間</h4>
+                <small class="chart-helper">各楽器の総練習時間を比較。得意な楽器と伸び代がひと目で分かります。</small>
+                <div class="chart-container"><canvas id="instrumentChart" style="max-height:280px;"></canvas></div>
+              </div>
+              <div class="chart-wrapper">
+                <h4 class="chart-label">🎯 スキル分析レーダー</h4>
+                <small class="chart-helper">ウォームアップ・基礎・曲・応用など、練習種別ごとのバランスをレーダーチャートで分析します。</small>
+                <div class="chart-container"><canvas id="skillChart" style="max-height:280px;"></canvas></div>
+              </div>
             </div>
           </div>
         </div>
@@ -349,9 +356,9 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
         <!-- ===== コミュニティの声 ===== -->
         <div class="card">
             <h2 class="section-title"><img src="assets/icons/split/04-01.png" alt="" aria-hidden="true">コミュニティの声</h2>
-            <div class="comm"><img src="assets/photos/photo_16.jpg" alt=""><div><div class="cn">ギター歴3年・30代</div><div class="ct">グラフで練習量が見えるので、毎日続けるモチベーションになっています。</div></div></div>
-            <div class="comm"><img src="assets/photos/photo_17.jpg" alt=""><div><div class="cn">ピアノ・音楽教室通学</div><div class="ct">メトロノームもチューナーも一体で、これ1つで練習が完結します。</div></div></div>
-            <div class="comm" style="border-bottom:none"><img src="assets/photos/photo_18.jpg" alt=""><div><div class="cn">バイオリン・20代</div><div class="ct">AIアドバイスで次の課題が明確に。発表会前の計画にも役立ちました。</div></div></div>
+            <div class="comm"><img src="assets/photos/photo_16.jpg" alt="" loading="lazy" decoding="async"><div><div class="cn">ギター歴3年・30代</div><div class="ct">グラフで練習量が見えるので、毎日続けるモチベーションになっています。</div></div></div>
+            <div class="comm"><img src="assets/photos/photo_17.jpg" alt="" loading="lazy" decoding="async"><div><div class="cn">ピアノ・音楽教室通学</div><div class="ct">メトロノームもチューナーも一体で、これ1つで練習が完結します。</div></div></div>
+            <div class="comm" style="border-bottom:none"><img src="assets/photos/photo_18.jpg" alt="" loading="lazy" decoding="async"><div><div class="cn">バイオリン・20代</div><div class="ct">AIアドバイスで次の課題が明確に。発表会前の計画にも役立ちました。</div></div></div>
         </div>
 
         <!-- ===== FAQ ===== -->
@@ -430,13 +437,15 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
     let logs=JSON.parse(localStorage.getItem(KEY2)||'[]');
     let practiceChartInstance=null;
     let instrumentChartInstance=null;
+    let skillChartInstance=null;
 
     function getInputs(){
       const instrument=document.getElementById('instrument')?.value||'';
+      const skill=document.getElementById('skill')?.value||'';
       const content=document.getElementById('content')?.value||'';
       const minutes=parseInt(document.getElementById('minutes')?.value||'0');
       if(!minutes){ alert('練習時間を入力してください'); return null; }
-      return {instrument,content,minutes};
+      return {instrument,skill,content,minutes};
     }
 
     function drawCharts(){
@@ -472,9 +481,13 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
           return {
             label:inst,
             data:last7Days.map(d=>dataByDate[d]?dataByDate[d][inst]||0:0),
-            backgroundColor:colorMap[inst],
+            backgroundColor:colorMap[inst]+'33',
             borderColor:colorMap[inst],
-            borderWidth:0
+            borderWidth:2,
+            fill:true,
+            tension:0.35,
+            pointRadius:3,
+            pointBackgroundColor:colorMap[inst]
           };
         });
 
@@ -482,7 +495,7 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
         if(ctx1 && ctx1.parentElement){
           if(practiceChartInstance) practiceChartInstance.destroy();
           practiceChartInstance=new Chart(ctx1,{
-            type:'bar',
+            type:'line',
             data:{labels:last7Days,datasets:datasets},
             options:{
               responsive:true,
@@ -511,6 +524,27 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
               }]
             },
             options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{position:'bottom'}}}
+          });
+        }
+
+        // スキル分析レーダー（練習種別ごとの累計時間）
+        const skillCats=['ウォームアップ','基礎練習','曲練習','応用・表現'];
+        const skillTotals=skillCats.map(c=>logs.reduce((s,l)=>(l.skill===c?s+l.minutes:s),0));
+        const ctx3=document.getElementById('skillChart');
+        if(ctx3 && ctx3.parentElement && skillTotals.some(v=>v>0)){
+          if(skillChartInstance) skillChartInstance.destroy();
+          skillChartInstance=new Chart(ctx3,{
+            type:'radar',
+            data:{labels:skillCats,datasets:[{
+              label:'練習時間（分）',
+              data:skillTotals,
+              backgroundColor:'rgba(37,99,235,.18)',
+              borderColor:'#2563EB',
+              borderWidth:2,
+              pointBackgroundColor:'#2563EB',
+              pointRadius:3
+            }]},
+            options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{display:false}},scales:{r:{beginAtZero:true,ticks:{display:false}}}}
           });
         }
       }catch(e){
