@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Consent Mode v2 -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','wait_for_update':500});(function(){try{var k='cookie-consent-v2',o='cookie-consent';var c=localStorage.getItem(k);if(!c&&localStorage.getItem(o)==='1')c='granted';if(c){var s=c==='granted'?'granted':'denied';gtag('consent','update',{'analytics_storage':s,'ad_storage':s,'ad_user_data':s,'ad_personalization':s});}}catch(e){}})();</script>
+<!-- End Consent Mode v2 -->
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
 new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
@@ -12,7 +15,8 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#7c3aed" />
     <title>楽器練習記録・上達トラッカー【無料】Webツール</title>
-    <meta name="description" content="楽器種類・練習内容・時間を記録。上達の軌跡を可視化してモチベーション維持に。登録不要・完全無料でご利用いただけます。ブラウザから無料で使えます。">
+    <meta name="description" content="楽器種類・練習内容・時間を記録。上達の軌跡を可視化してモチベーション維持に">
+<meta name="author" content="AppADayCreator">
     <link rel="canonical" href="https://appadaycreator.com/music-practice-log/">
     <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -44,7 +48,7 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"楽器練習記録・上達トラッカー","description":"楽器種類・練習内容・時間を記録。上達の軌跡を可視化してモチベーション維持に。登録不要・完全無料でご利用いただけます。","url":"https://appadaycreator.com/music-practice-log/","applicationCategory":"UtilityApplication","operatingSystem":"Any","inLanguage":"ja","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"},"author":{"@type":"Organization","name":"AppADayCreator","url":"https://appadaycreator.com/"}}</script>
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "楽器練習記録・上達トラッカーは無料で使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、完全無料・登録不要でご利用いただけます。"}}, {"@type": "Question", "name": "記録データはどこに保存されますか？", "acceptedAnswer": {"@type": "Answer", "text": "ご使用のブラウザのローカルストレージに保存されます。他のデバイスとは共有されません。"}}, {"@type": "Question", "name": "ブラウザを閉じても記録は残りますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、同じブラウザを使う限りデータは保持されます。"}}, {"@type": "Question", "name": "記録を削除するにはどうすればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "リセットボタン、またはブラウザのサイトデータをクリアすることで削除できます。"}}, {"@type": "Question", "name": "スマートフォンで利用できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい、スマートフォン・タブレット・PCすべてでご利用いただけます。"}}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"記録データはどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"ご使用のブラウザのローカルストレージに保存されます。他のデバイスとは共有されません。"}},{"@type":"Question","name":"ブラウザを閉じても記録は残りますか？","acceptedAnswer":{"@type":"Answer","text":"はい、同じブラウザを使う限りデータは保持されます。"}},{"@type":"Question","name":"記録を削除するにはどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"リセットボタン、またはブラウザのサイトデータをクリアすることで削除できます。"}}]}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"楽器練習記録・上達トラッカー【無料】Webツールの使い方","step":[{"@type":"HowToStep","position":1,"name":"記録する情報を入力する","text":"記録したい内容（日付・数値・テキスト）を入力フォームに入力する"},{"@type":"HowToStep","position":2,"name":"「追加」ボタンで保存する","text":"「追加」または「記録」ボタンを押してデータをブラウザに保存する"},{"@type":"HowToStep","position":3,"name":"記録一覧で履歴を確認する","text":"記録一覧やカレンダーで過去のデータを確認する"},{"@type":"HowToStep","position":4,"name":"グラフや集計で傾向を把握する","text":"グラフや統計機能を使ってデータの推移・傾向を分析する"},{"@type":"HowToStep","position":5,"name":"継続して変化を追跡する","text":"毎日継続的に記録することで長期的な変化を可視化する"}]}</script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -136,8 +140,6 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         <div class="card">
           <div id="tool-desc-box" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:1.5rem 1.75rem;margin:1.5rem 0">
   <p style="color:#374151;margin:0 0 .75rem;line-height:1.75;font-size:.92rem">楽器練習記録・上達トラッカー【無料】Webツールは、AppADayCreatorが提供する完全無料の無料ツールです。登録・ログイン不要で、すぐにご利用いただけます。</p>
-  <p style="color:#374151;margin:0 0 .75rem;line-height:1.75;font-size:.92rem">【使い方】①必要な情報を入力 → ②ボタンをクリック → ③結果・アドバイスを確認してください。</p>
-  <p style="color:#4b5563;margin:0;line-height:1.75;font-size:.9rem">当ツールで入力したデータはお使いのブラウザ内にのみ保存され、外部サーバーへ送信されることはありません。安心してご利用ください。</p>
 </div>
 <div style="background:#eaf4fb;border-left:4px solid #1976d2;padding:20px 24px;margin:24px 0;border-radius:0 8px 8px 0">
   <h3 style="font-size:1.1rem;font-weight:800;color:#1e3a5f">このツールでできること</h3>
@@ -186,12 +188,10 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
       </tr>
     </tbody>
   </table>
-  <p style="font-size:.78rem;color:#6b7280;margin:.5rem 0 0">※ 記載データは各出典の公表時点の情報です。最新情報は各公的機関の公式サイトをご確認ください。</p>
 </div>
 <!-- r20-tool-links -->
 <div id="tool-disclaimer" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:.875rem">
   <p style="font-weight:700;color:#374151;margin:0 0 .5rem">⚠️ 計算結果の活用にあたって</p>
-  <p style="color:#4b5563;margin:0 0 .5rem;line-height:1.75">計算結果は参考値です。入力値や前提条件によって結果が変わります。重要な判断の際は最新の公式情報をご確認ください。</p>
   <ul style="margin:0;padding-left:1.25rem;color:#4b5563;line-height:1.9"><li><a href="https://www.caa.go.jp/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5;font-size:.85rem">消費者庁「くらしの安心ガイド」</a></li></ul>
 </div>
 <h2 style="font-size:18px;font-weight:700;margin-bottom:16px;">🎸 楽器練習記録・上達トラッカー</h2>
@@ -259,10 +259,7 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         <div class="card" style="margin-top:8px;">
             <h2 style="font-size:15px;font-weight:700;margin-bottom:14px;color:#374151;">❓ よくある質問</h2>
             <div style="display:flex;flex-direction:column;gap:14px;">
-            <div style="border-bottom:1px solid #f1f5f9;padding-bottom:12px;">
-              <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: 楽器練習記録・上達トラッカーは無料で使えますか？</p>
-              <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: はい、完全無料・登録不要でご利用いただけます。</p>
-            </div>
+            
             <div style="border-bottom:1px solid #f1f5f9;padding-bottom:12px;">
               <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: 記録データはどこに保存されますか？</p>
               <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: ご使用のブラウザのローカルストレージに保存されます。他のデバイスとは共有されません。</p>
@@ -275,10 +272,7 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
               <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: 記録を削除するにはどうすればいいですか？</p>
               <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: リセットボタン、またはブラウザのサイトデータをクリアすることで削除できます。</p>
             </div>
-            <div style="border-bottom:1px solid #f1f5f9;padding-bottom:12px;">
-              <p style="font-size:14px;font-weight:600;color:#374151;margin-bottom:4px;">Q: スマートフォンで利用できますか？</p>
-              <p style="font-size:13px;color:#6b7280;line-height:1.7;">A: はい、スマートフォン・タブレット・PCすべてでご利用いただけます。</p>
-            </div>
+            
             </div>
         </div>
 
@@ -292,25 +286,21 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         </div>
 
         <!-- 免責事項 -->
-        <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px;margin:8px 0;font-size:12px;color:#92400e;">
-            <strong>⚠️ 免責事項</strong>：本ツールの計算・診断結果はあくまで参考情報です。医療・法律・税務・投資等の専門的判断が必要な場合は、必ず資格を持つ専門家にご相談ください。本サービスの利用により生じた損害について、当サービスは一切の責任を負いません。
-        </div>
+        <p style="font-size:11px;color:#92400e;margin:6px 0">⚠️ 本ツールの結果は参考情報です。専門的判断は資格を持つ専門家にご相談ください。</p>
     
 <div style="background:#f8faff;border:1px solid #e0e7ff;border-radius:.75rem;padding:1.25rem 1.5rem;margin:1.5rem auto;max-width:740px">
   <p style="font-weight:700;font-size:.9rem;margin:0 0 .75rem;color:#3730a3">📋 このツールの詳細</p>
   <p style="font-size:.875rem;color:#374151;line-height:1.8;margin:0 0 .5rem">本ツールは、楽器練習記録・上達トラッカーWebツールを手軽に利用できる無料Webサービスです。登録不要でブラウザから直接ご利用いただけます。</p>
-  <p style="font-size:.875rem;color:#374151;line-height:1.8;margin:0 0 .5rem">スマートフォン・タブレット・PCのすべてに対応したレスポンシブデザインです。入力データはブラウザ内のみで処理・保存され、外部サーバーに送信されることはありません。</p>
-  <p style="font-size:.875rem;color:#374151;line-height:1.8;margin:0">計算・診断の結果はあくまでも参考値です。重要な意思決定の際は専門家・公式機関にもご相談ください。このツールの利用は無料・無制限です。</p>
 </div>
 <section aria-labelledby="faq-h" class="bg-white rounded-2xl shadow-md p-4 mb-4" style="max-width:740px;margin-left:auto;margin-right:auto">
   <h2 id="faq-h" style="font-size:1.05rem;font-weight:700;margin-bottom:12px;border-left:4px solid #4f46e5;padding-left:10px;">よくある質問</h2>
   <dl style="line-height:1.8;">
-    <dt style="font-weight:600;margin-top:12px;">Q: 診断結果はどう活用すればいいですか？</dt>
-    <dd style="margin-left:16px;color:#374151;">楽器練習記録・上達Webツールに関する判断・選択の参考情報としてご活用ください。条件を変えて複数回試すことで、より広い視点で検討できます。</dd>
-    <dt style="font-weight:600;margin-top:12px;">Q: 診断を繰り返し使えますか？</dt>
-    <dd style="margin-left:16px;color:#374151;">はい、条件を変えて何度でも診断いただけます。異なるシナリオで結果を比較することで、より確かな判断材料になります。</dd>
-    <dt style="font-weight:600;margin-top:12px;">Q: 入力したデータはどこに保存されますか？</dt>
-    <dd style="margin-left:16px;color:#374151;">すべての処理はブラウザ内で完結します。入力データがサーバーに送信されることはなく、プライバシーが守られます。</dd>
+    <dt style="font-weight:600;color:#1e293b;padding:8px 0 4px">Q. 練習ログをつける効果は何ですか？</dt>
+    <dd style="font-size:.875rem;color:#475569;margin:0 0 12px;padding-left:12px;line-height:1.8">練習ログをつけることで、練習量と上達の相関が見えやすくなります。「どの曲に何時間費やしたか」「どの技術に苦手を感じているか」を可視化することで、偏りのない練習計画を立てられます。また、積み上げた練習時間を確認することが自己効力感（「自分はできる」という感覚）を高め、継続モチベーションになります。発表会・オーディション前には過去の練習ペースを参考に逆算スケジュールを立てることもできます。</dd>
+    <dt style="font-weight:600;color:#1e293b;padding:8px 0 4px">Q. 効率的な練習時間の長さはどのくらいですか？</dt>
+    <dd style="font-size:.875rem;color:#475569;margin:0 0 12px;padding-left:12px;line-height:1.8">質の高い集中練習であれば、1日30〜90分が多くの演奏家に推奨される時間帯です。長時間練習より「短時間・高集中・毎日継続」の方が記憶定着と筋肉の協調学習に有利とされています。特に楽器演奏では指や腕の筋肉の疲労を無視して練習すると、誤った動作が定着する「過練習」のリスクがあります。45〜60分練習したら10〜15分の休憩を入れるメリハリが、集中力と身体の安全を保ちます。本ツールで練習時間を記録し、無理のないペースを確認してください。</dd>
+    <dt style="font-weight:600;color:#1e293b;padding:8px 0 4px">Q. 練習の質を上げるコツはありますか？</dt>
+    <dd style="font-size:.875rem;color:#475569;margin:0 0 12px;padding-left:12px;line-height:1.8">効果的な練習の基本は「問題箇所の特定→分離→ゆっくり反復→テンポを戻す」という工程です。通し練習ばかりでなく、難しい箇所だけを取り出して集中的に練習する「部分練習」が上達の鍵です。また、ゆっくりしたテンポ（目標の50〜70%程度）で正確に弾く習慣は、速いテンポでも正確に演奏できる基礎を作ります。録音して客観的に聴くことで、自分では気づかない問題点を発見できます。</dd>
   </dl>
 </section>
 <!-- r27-tool-guide -->
@@ -448,30 +438,67 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
       document.getElementById('result').scrollIntoView({behavior:'smooth',block:'start'});
     }
     </script>
-    <!-- rakuten-affiliate-block -->
-    <div style="border:1px solid #BF0000;background:#fff9f9;border-radius:10px;padding:14px;margin:12px auto;max-width:480px;text-align:center;">
-      <p style="font-size:0.85rem;color:#4b5563;margin-bottom:8px;">🛒 関連商品を楽天市場で探す</p>
-      <a href="https://hb.afl.rakuten.co.jp/ichiba/541ad0d2.ce2bed12.541ad0d3.a1a2318c/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%25A5%25BD%25E5%2599%25A8%2520%25E7%25B7%25B4%25E7%25BF%2592%2520%25E6%2595%2599%25E6%259D%2590%2F&link_type=text" target="_blank" rel="nofollow sponsored noopener"
-         style="display:inline-block;background:#BF0000;color:white;padding:10px 24px;border-radius:8px;font-weight:bold;font-size:14px;text-decoration:none;">
-        楽天市場で「楽器 練習 教材」を検索 →
-      </a>
-    </div>
-    <!-- /rakuten-affiliate-block -->
+    <!-- r31-use-cases -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<h2 style="font-size:1.125rem;font-weight:700;margin:0 0 1rem;color:#1e293b;border-left:4px solid #4f46e5;padding-left:10px">こんな方・シーンで役立ちます</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem">
+</div>
+</div>
+<!-- r31-extended-faq -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="background:white;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.08)">
+<h2 style="font-size:1.05rem;font-weight:700;margin:0 0 1rem;border-left:4px solid #4f46e5;padding-left:10px;color:#1e293b">よくある質問（詳細）</h2>
+<div style="margin-top:12px;display:flex;flex-direction:column;gap:12px">
+<div style="border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px"><p style="font-weight:600;color:#1e293b;margin:0 0 6px">Q. スランプに陥ったときの対処法は？</p><p style="font-size:.875rem;color:#475569;line-height:1.8;margin:0">スランプは上達の過程で誰でも経験します。練習してもうまくなった気がしない・以前できていたことができなくなるといった感覚は、脳が新しいレベルへの移行期に感じる「プラトー（高原）」と呼ばれる現象です。この時期は練習量を減らして休息を増やすか、違う曲・違う技術に取り組むことで脳への刺激を変えることが効果的です。スランプ中でも練習ログをつけ続けることで、「前後の練習量と質の変化」が後から見てわかり、同じ状況で適切な判断ができます。</p></div>
+<div style="border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px"><p style="font-weight:600;color:#1e293b;margin:0 0 6px">Q. 発表会・演奏会前の練習計画の立て方は？</p><p style="font-size:.875rem;color:#475569;line-height:1.8;margin:0">本番から逆算して、3段階に分けて練習計画を立てると効果的です。まず「習得期（本番6週間前まで）」は技術的な問題を解消する集中練習、次に「定着期（3〜6週間前）」は通し練習を増やして曲全体の完成度を上げる、最後に「仕上げ期（1〜3週間前）」は本番に近い環境でのシミュレーションと暗譜確認です。前日は長時間練習を避け、軽い通し練習とリラックスを優先しましょう。本ツールで過去の練習ログを確認し、今回の本番に向けた余裕ある計画を立ててください。</p></div>
+</div>
+</div>
+</div>
+<!-- r31-tool-notice -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="padding:1.25rem 1.5rem;background:#fef3c7;border:1px solid #fbbf24;border-radius:.75rem">
+<h3 style="font-size:1rem;font-weight:700;margin:0 0 .75rem;color:#92400e">⚠️ ご利用時の注意事項</h3>
+<ul style="margin:0;padding-left:1.25rem;font-size:.88rem;color:#78350f;line-height:2">
+<li style='margin-bottom:.4rem'>本ツールの結果はあくまで参考情報です。実際の状況に応じてご判断ください</li>
+<li style='margin-bottom:.4rem'>重要な決定（医療・法律・財務等）を行う際は必ず専門家にご相談ください</li>
+<li style='margin-bottom:.4rem'>入力データはサーバーに送信されず、すべてブラウザ内で処理されます</li>
+<li style='margin-bottom:.4rem'>本ツールの計算・診断ロジックは定期的に更新しています</li>
+</ul>
+</div>
+</div>
+<!-- r31-tool-references -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="padding:1.25rem 1.5rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:.75rem">
+<h3 style="font-size:1rem;font-weight:700;margin:0 0 .75rem;color:#1e293b">📚 関連する公的情報・参考リンク</h3>
+<ul style="margin:0;padding-left:1.25rem;font-size:.88rem;color:#374151;line-height:1.9">
+<li style='margin-bottom:.5rem'><a href="https://www.gov-online.go.jp/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5">政府広報オンライン</a> — くらしに役立つ最新の政策・制度・行政情報</li>
+<li style='margin-bottom:.5rem'><a href="https://www.e-gov.go.jp/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5">e-Gov 電子政府の総合窓口</a> — 法令・行政手続・公的制度の詳細情報</li>
+<li style='margin-bottom:.5rem'><a href="https://www.cao.go.jp/consumer/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5">消費者庁</a> — 消費者の権利・安全・表示に関する公的情報</li>
+<li style='margin-bottom:.5rem'><a href="https://www.nhk.or.jp/life/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5">NHK くらし解説</a> — 暮らしのさまざまな疑問をわかりやすく解説</li>
+</ul>
+</div>
+</div>
+<!-- r31-tool-about -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="padding:1.25rem 1.5rem;background:#f0f9ff;border:1px solid #bae6fd;border-radius:.75rem">
+<h3 style="font-size:1rem;font-weight:700;margin:0 0 .75rem;color:#0c4a6e">ℹ️ このツールについて</h3>
+<p style="margin:0;font-size:.88rem;color:#0c4a6e;line-height:1.9">「楽器練習記録・上達トラッカー」はAppADayCreatorが提供する無料Webツールです。ライフスタイルに関する情報を素早く手軽に確認できます。会員登録・アプリインストール不要で、ブラウザからすぐにご利用いただけます。すべての処理はブラウザ内で完結するため、入力した情報が外部サーバーに送信されることはなく、プライバシーも保護されます。AppADayCreatorでは、日常生活のあらゆるシーンで役立つWebツールを400本以上無料で提供しています。金融・健康・育児・キャリア・旅行など幅広いカテゴリのツールをご活用ください。</p>
+</div>
+</div>
+<!-- r31-extra-guide -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="background:white;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.06)">
 
-    <!-- Amazon アフィリエイト -->
-    <div style="background:#f0fdf4;border:1px solid #86efac;border-radius:10px;padding:14px;margin:16px auto;max-width:500px;text-align:center;">
-      <p style="font-size:0.78em;color:#15803d;font-weight:bold;margin-bottom:8px;">📚 関連書籍・グッズをAmazonでチェック</p>
-      <a href="https://www.amazon.co.jp/s?k=楽器練習記録+本+おすすめ&tag=appadaycrea0f-22" target="_blank" rel="noopener noreferrer" class="js-track-affiliate" data-platform="Amazon" data-item-name="楽器練習記録 関連書籍" data-link-type="affiliate_link" style="display:inline-block;background:#ff9900;color:#fff;padding:9px 20px;border-radius:8px;font-size:0.85em;font-weight:bold;text-decoration:none;margin:4px;">🛒 楽器練習記録 関連書籍</a>
-      <a href="https://www.amazon.co.jp/s?k=楽器練習記録+入門+書籍&tag=appadaycrea0f-22" target="_blank" rel="noopener noreferrer" class="js-track-affiliate" data-platform="Amazon" data-item-name="楽器練習記録 入門ガイド" data-link-type="affiliate_link" style="display:inline-block;background:#ff9900;color:#fff;padding:9px 20px;border-radius:8px;font-size:0.85em;font-weight:bold;text-decoration:none;margin:4px;">🛒 楽器練習記録 入門ガイド</a>
-    </div>
+<h3 style="font-size:.95rem;font-weight:700;margin:1.25rem 0 .6rem;color:#1e293b">関連ツールのご紹介</h3>
+
+</div>
+</div>
 
 <div style="border-top:1px solid #e5e7eb;padding:14px 16px 18px;background:#fff;">
   <p style="text-align:center;font-size:11px;font-weight:600;color:#94a3b8;margin:0 0 10px;">スポンサーリンク</p>
   <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;max-width:700px;margin:0 auto;">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3R2X+9XVTWQ+3EMG+2HDLC2" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">【ピアノの買取屋さん】創業15年の意地で高額買取します。電話受付22時まで対応可能！</a><img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4B3R2X+9XVTWQ+3EMG+2HDLC2" alt="">
     <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ6+FQ9JMY+1LP8+BY642" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">日々の生活にハッピーをプラス！《ハピタス》</a><img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4B3WJ6+FQ9JMY+1LP8+BY642" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ7+18PTPM+1O96+699KI" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">《ヨガ》をはじめてみませんか？ホットヨガスタジオLAVA</a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B3WJ7+18PTPM+1O96+699KI" alt="">
-    <a href="https://px.a8.net/svt/ejp?a8mat=457C4C+C23BCA+0K+10FXXU" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">アフィリエイトならA8.net</a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=457C4C+C23BCA+0K+10FXXU" alt="">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B3VR6+GFV6NE+3CJQ+64C3M" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">本・雑誌・ビジネス書が聴ける【audiobook.jp】</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B3VR6+GFV6NE+3CJQ+64C3M" alt="">
   </div>
 </div>
 <footer style="text-align:center;padding:20px;color:white;font-size:12px;background:#374151;margin-top:8px;">
@@ -483,8 +510,7 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         <p style="margin-top:6px;">© 2026 AppADayCreator. All services are free.</p>
     <div style="background:linear-gradient(135deg,#1e3a5f,#2563eb);padding:16px 12px;text-align:center;margin-top:12px;">
   <p style="color:#e0e7ff;font-size:12px;font-weight:600;margin:0 0 4px;">運営：AppADayCreator / Tech&amp;Brace</p>
-  <p style="color:#cbd5e1;font-size:11px;margin:0 0 10px;">累計399個のWebサービスをAI駆動で開発し、現在361件以上を公開・運用しています。
-AI導入・業務自動化・Webサービス開発のご相談はこちら。</p>
+  <p style="color:#cbd5e1;font-size:11px;margin:0 0 10px;">マネー・健康・育児・キャリアなど日常に役立つ無料Webサービスを提供。IT・業務効率化のご相談はこちら。</p>
   <a href="https://tech-and-brace.com/ai-automation?utm_source=appadaycreator&utm_medium=footer&utm_campaign=b2b_cta" target="_blank" rel="noopener" onclick="if(typeof gtag==='function'){gtag('event','b2b_cta_click',{source_page:window.location.pathname,cta_position:'footer',tool_category:document.querySelector('[aria-label=\"パンくずリスト\"] li:nth-child(3) a')?document.querySelector('[aria-label=\"パンくずリスト\"] li:nth-child(3) a').innerText:'general',destination:'https://tech-and-brace.com/ai-automation'})}" style="display:inline-block;background:#fff;color:#1e3a5f;font-size:11px;font-weight:700;padding:6px 16px;border-radius:20px;text-decoration:none;">法人・B2B相談はこちら →</a>
 </div>
 </footer>
@@ -510,5 +536,12 @@ AI導入・業務自動化・Webサービス開発のご相談はこちら。</p
   }, {passive:true});
 })();
 </script>
+<!-- r31-cookie-banner -->
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#1e293b;color:#f1f5f9;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;z-index:9999;font-size:.85rem;box-shadow:0 -2px 10px rgba(0,0,0,.3)">
+<div>当サイトはCookieおよびGoogle Analyticsを使用しています。<a href="/privacy-policy.html" style="color:#60a5fa;text-decoration:underline">プライバシーポリシー</a>をご確認ください。</div>
+<button onclick="document.getElementById('cookie-banner').style.display='none';window.grantConsent && window.grantConsent()" style="background:#3b82f6;color:#fff;border:none;padding:.5rem 1.25rem;border-radius:.375rem;font-size:.85rem;font-weight:600;cursor:pointer;white-space:nowrap">同意して閉じる</button>
+</div>
+<script>if(localStorage.getItem('cookie-consent'))document.getElementById('cookie-banner').style.display='none'</script>
+<script src="/assets/consent-mode.js"></script>
 </body>
 </html>
